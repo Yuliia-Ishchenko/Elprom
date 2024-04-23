@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 30px;
+}
+h4,
+h3 {
+  font-size: 22px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: Arial, 'Source Sans Pro', sans-serif;
+  color: var(--menu-bg-color);
+  line-height: 1.4;
+  margin: 0 0 15px;
+}
+p {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Arial, 'Source Sans Pro', sans-serif;
+  color: var(--gray-text-color);
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+.vp-1 {
+  padding: 1rem 0;
+}
+.text-red {
+  color: var(--menu-bg-color);
+  font-size: 17px;
+}
+.color-red {
+  color: var(--menu-bg-color);
+}
+.text-white {
+  color: white;
+}
+.bg-color-red {
+  background: var(--menu-bg-color);
+}
+.bg-gray {
+  background: var(--gray-bg-color);
+}
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+.line-btm {
+  border-bottom: 1px solid rgb(238, 236, 236);
+}
+.inner-padding {
+  padding: 2rem 0;
+}
+.inn-p-btm {
+  padding-bottom: 2rem;
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.footer-list-item {
+  color: #777984;
+  margin-bottom: 15px;
+}
+em,
+li,
+li a {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Arial, 'Source Sans Pro', sans-serif;
+  color: var(--gray-text-color);
+  text-decoration: none;
+}
+.img-responsive {
+  width: 100%;
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+  background-color: var(--menu-bg-color);
+}
+
+.p-button.p-button-secondary,
+.p-button-group.p-button-secondary > .p-button,
+.p-splitbutton.p-button-secondary > .p-button {
+  color: var(--menu-bg-color);
+  background: #f1f5f9;
+  border-color: #e2e8f0;
+}
+.p-button.p-button-secondary:not(:disabled):hover,
+.p-button-group.p-button-secondary > .p-button:not(:disabled):hover,
+.p-splitbutton.p-button-secondary > .p-button:not(:disabled):hover {
+  background: #e6e6e6;
+  border: 1px solid #adadad;
+}
+.p-button.p-button-danger,
+.p-button-group.p-button-danger > .p-button,
+.p-splitbutton.p-button-danger > .p-button {
+  color: white;
+  background: var(--menu-bg-color);
+  border-color: var(--menu-bg-color);
+}
+.p-breadcrumb {
+  border: none;
+  padding: 0.5rem 0;
+  li {
+    .p-icon {
+      width: 0.7rem;
+      height: 0.7rem;
+    }
+    a {
+      span {
+        color: var(--menu-bg-color);
+      }
+    }
+    a:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.p-scrolltop.p-link {
+  background: #515769;
+  opacity: 0.4;
+  transform: translate3d(0, 0, 0);
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+.p-scrolltop.p-link:hover {
+  opacity: 1;
+}
+.p-scrolltop {
+  border-radius: 3px;
+  width: 40px;
+  height: 40px;
+}
+.p-scrolltop .p-scrolltop-icon.p-icon {
+  width: 1rem;
+  height: 1rem;
+}
