@@ -3,7 +3,7 @@
     <Carousel :value="products" :numVisible="3" :numScroll="1" circular :autoplayInterval="3000">
       <template #item="slotProps">
         <img
-          :src="`/src/assets/img/Aktuality-obrazek2.jpg`"
+          :src="`/assets${slotProps.data.image}`"
           :alt="slotProps.data.name"
           class="w-full border-round img-carusel" />
       </template>
