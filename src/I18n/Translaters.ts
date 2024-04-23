@@ -1,6 +1,3 @@
-import InquiryForm from '@/components/InquiryForm.vue'
-import { text } from 'stream/consumers'
-
 export const messages = {
   en: {
     menubar: {
@@ -321,8 +318,8 @@ export const messages = {
       radio1: 'Soukromá osoba',
       radio2: 'Firma',
       textarea: 'Poznámka / dotaz',
-      btnSend:'Odeslat',
-      btnCancel:'Zrušit'
+      btnSend: 'Odeslat',
+      btnCancel: 'Zrušit',
     },
   },
 }
