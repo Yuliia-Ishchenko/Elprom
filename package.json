@@ -11,7 +11,6 @@
     "primeflex": "^3.3.1",
     "primeicons": "^7.0.0",
     "primevue": "^3.51.0",
-    "register-service-worker": "^1.7.2",
     "vue": "^3.4.21",
     "vue-i18n": "^9.13.0",
     "vue-router": "^4.3.1"
@@ -19,10 +18,10 @@
   "devDependencies": {
     "@types/node": "^20.12.7",
     "@vitejs/plugin-vue": "^5.0.4",
-    "@vue/cli-plugin-pwa": "~5.0.0",
     "sass": "^1.75.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
+    "vite-plugin-pwa": "^0.19.8",
     "vue-tsc": "^2.0.6"
   },
   "type": "module"
