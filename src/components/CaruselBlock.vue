@@ -2,10 +2,7 @@
   <div class="">
     <Carousel :value="products" :numVisible="3" :numScroll="1" circular :autoplayInterval="3000">
       <template #item="slotProps">
-        <img
-          :src="`/assets${slotProps.data.image}`"
-          :alt="slotProps.data.name"
-          class="w-full border-round img-carusel" />
+        <img :src="`${slotProps.data.image}`" :alt="slotProps.data.name" class="w-full border-round img-carusel" />
       </template>
     </Carousel>
   </div>
@@ -13,6 +10,7 @@
 
 <script lang="ts" setup>
 import Carousel from 'primevue/carousel'
+import img1 from '/src/assets/img/Aktuality-obrazek2.jpg'
 // import Button from 'primevue/button'
 import { ref } from 'vue'
 const products = ref([
@@ -21,7 +19,7 @@ const products = ref([
     code: 'f230fh0g3',
     name: 'Bamboo Watch',
     description: 'Product Description',
-    image: '/Aktuality-obrazek2.jpg',
+    image: img1,
   },
   {
     id: '1001',
