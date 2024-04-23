@@ -11,7 +11,9 @@
 <script lang="ts" setup>
 import Carousel from 'primevue/carousel'
 import img1 from '/src/assets/img/Aktuality-obrazek2.jpg'
-// import Button from 'primevue/button'
+import img2 from '/src/assets/img/elprom_o_nas_background2.jpg'
+import img3 from '/src/assets/img/Kariera-obrazek2.png'
+import img4 from '/src/assets/img/Nase-kompetence-obrazek2.jpg'
 import { ref } from 'vue'
 const products = ref([
   {
@@ -26,21 +28,21 @@ const products = ref([
     code: 'f230fh0g3',
     name: 'Bamboo Watch',
     description: 'Product Description',
-    image: '/elprom_o_nas_background2.jpg',
+    image: img2,
   },
   {
     id: '1002',
     code: 'f230fh0g3',
     name: 'Bamboo Watch',
     description: 'Product Description',
-    image: '/Kariera-obrazek2.png',
+    image: img3,
   },
   {
     id: '1003',
     code: 'f230fh0g3',
     name: 'Bamboo Watch',
     description: 'Product Description',
-    image: '/Nase-kompetence-obrazek2.jpg',
+    image: img4,
   },
 ])
 </script>

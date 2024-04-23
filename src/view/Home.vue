@@ -154,26 +154,34 @@ import Galleria from 'primevue/galleria'
 import { useI18n } from 'vue-i18n'
 import { PageName } from '@/enums/PageName'
 import { useRouter } from 'vue-router'
+import img1 from '/src/assets/img/Aktuality-obrazek.jpg'
+import img2 from '/src/assets/img/elprom_o_nas_background.jpg'
+import img3 from '/src/assets/img/Kariera-obrazek.png'
+import img4 from '/src/assets/img/Nase-kompetence-obrazek.jpg'
+import img1_2 from '/src/assets/img/skrine.jpg'
+import img2_2 from '/src/assets/img/Kariera-obrazek2.png'
+import img3_2 from '/src/assets/img/elprom_o_nas_background2.jpg'
+import img4_2 from '/src/assets/img/contact-us.png'
 const { t } = useI18n()
 const router = useRouter()
 const images = ref([
   {
-    itemImageSrc: '/src/assets/img/Aktuality-obrazek.jpg',
+    itemImageSrc: img1,
     alt: 'Description for Image 1',
     title: 'Title 1',
   },
   {
-    itemImageSrc: '/src/assets/img/elprom_o_nas_background.jpg',
+    itemImageSrc: img2,
     alt: 'Description for Image 1',
     title: 'Title 1',
   },
   {
-    itemImageSrc: '/src/assets/img/Kariera-obrazek.png',
+    itemImageSrc: img3,
     alt: 'Description for Image 1',
     title: 'Title 1',
   },
   {
-    itemImageSrc: '/src/assets/img/Nase-kompetence-obrazek.jpg',
+    itemImageSrc: img4,
     alt: 'Description for Image 1',
     title: 'Title 1',
   },
@@ -183,25 +191,25 @@ const itemList = computed(() => [
   {
     id: 1,
     title: t('footerLinks.references'),
-    src: '/src/assets/img/skrine.jpg',
+    src: img1_2,
     routerUrl: PageName.Reference,
   },
   {
     id: 2,
     title: t('menubar.career'),
-    src: '/src/assets/img/Kariera-obrazek2.png',
+    src: img2_2,
     routerUrl: PageName.Career,
   },
   {
     id: 3,
     title: t('home.text3'),
-    src: '/src/assets/img/elprom_o_nas_background2.jpg',
+    src: img3_2,
     routerUrl: PageName.About, //partnery
   },
   {
     id: 4,
     title: t('menubar.contact'),
-    src: '/src/assets/img/contact-us.png',
+    src: img4_2,
     routerUrl: PageName.Contact,
   },
 ])
