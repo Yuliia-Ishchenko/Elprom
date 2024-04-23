@@ -3,7 +3,7 @@
     <div class="home-gallerie">
       <Galleria
         :value="images"
-        :numVisible="5"
+        :numVisible="4"
         :auto-play="true"
         containerStyle="max-width: 640px"
         :showThumbnails="false"
