@@ -104,7 +104,7 @@ function onSend() {
     square.value
   ) {
     //sending logic
-    onCancel()
+    // onCancel()
   }
 }
 </script>
