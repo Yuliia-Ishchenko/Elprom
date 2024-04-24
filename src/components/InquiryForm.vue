@@ -103,8 +103,8 @@ function onSend() {
     consump.value &&
     square.value
   ) {
-    //sending logic
-    // onCancel()
+    //send logoc todo
+    onCancel()
   }
 }
 </script>
