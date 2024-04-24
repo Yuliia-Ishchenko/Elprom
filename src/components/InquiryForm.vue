@@ -104,7 +104,7 @@ function onSend() {
     square.value
   ) {
     //send logoc todo
-    // onCancel()
+    onCancel()
   }
 }
 </script>
