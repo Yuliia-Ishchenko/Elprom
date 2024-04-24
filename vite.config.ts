@@ -12,7 +12,7 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,jpg,ico,png,svg,webmanifest}'],
         cleanupOutdatedCaches: true,
-        cacheId: '1',
+        cacheId: '2',
         skipWaiting: true,
       },
     }),
