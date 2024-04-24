@@ -92,8 +92,20 @@ function onCancel() {
 }
 function onSend() {
   showError.value = true
-  //sending logic
-  //   onCancel()
+  if (
+    name.value &&
+    phone.value &&
+    email.value &&
+    street.value &&
+    number.value &&
+    psc.value &&
+    region.value &&
+    consump.value &&
+    square.value
+  ) {
+    //sending logic
+    onCancel()
+  }
 }
 </script>
 
