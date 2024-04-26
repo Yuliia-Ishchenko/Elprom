@@ -1,6 +1,6 @@
 <template>
   <span :class="item.icon" />
-  <span class="ml-2" @click="redirect">{{ item.label }}</span>
+  <span class="ml-2" @click="redirect" style="width: 100%">{{ item.label }}</span>
 </template>
 
 <script lang="ts" setup>

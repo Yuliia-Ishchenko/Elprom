@@ -1,0 +1,19 @@
+.online {
+  --menu-bg-color: #ba122b;
+  --gray-bg-color: #fafafa;
+  --gray-text-color: #515769;
+}
+/* Small tablets and large smartphones (landscape view)  */
+$screen-sm-bp: 576px;
+
+/* Small tablets (portrait view) */
+$screen-md-bp: 768px;
+
+/* Tablets and small desktops */
+$screen-lg-bp: 992px;
+
+/* Large tablets and desktops */
+$screen-xl-bp: 1200px;
+
+/* bp for menu bar */
+$bp-menubar: 1073px;

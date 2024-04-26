@@ -1,3 +1,4 @@
+@import '@/assets/css/variables.scss';
 body {
   margin: 0;
 }
@@ -51,8 +52,8 @@ p {
   background: var(--gray-bg-color);
 }
 .container {
-  max-width: 1140px;
-  margin: auto;
+  width: 100%;
+  padding: 0.5rem;
 }
 .line-btm {
   border-bottom: 1px solid rgb(238, 236, 236);
@@ -70,7 +71,7 @@ p {
 ol,
 ul {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 .footer-list-item {
   color: #777984;
@@ -87,6 +88,7 @@ li a {
 }
 .img-responsive {
   width: 100%;
+  height: auto;
 }
 
 .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
@@ -151,4 +153,33 @@ li a {
 .p-scrolltop .p-scrolltop-icon.p-icon {
   width: 1rem;
   height: 1rem;
+}
+
+@media screen and (min-width: $screen-sm-bp) {
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+@media screen and (min-width: $screen-md-bp) {
+  .container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+@media screen and (min-width: $screen-lg-bp) {
+}
+@media screen and (min-width: $screen-xl-bp) {
+  .container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 0;
+  }
+}
+@media screen and (min-width: $bp-menubar) {
+  ol,
+  ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }

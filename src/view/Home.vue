@@ -10,7 +10,11 @@
         :showIndicators="true"
         :circular="true">
         <template #item="slotProps">
-          <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="display: block" />
+          <img
+            :src="slotProps.item.itemImageSrc"
+            :alt="slotProps.item.alt"
+            style="display: block"
+            class="img-responsive" />
         </template>
       </Galleria>
       <div class="baner">

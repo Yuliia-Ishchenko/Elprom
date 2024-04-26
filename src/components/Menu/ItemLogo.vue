@@ -10,11 +10,5 @@ defineProps<{
 </script>
 
 <style lang="scss" scoped>
-.img-logo {
-  width: 235px;
-  margin-right: 2rem;
-}
-.img-logo:hover {
-  cursor: pointer;
-}
+
 </style>
