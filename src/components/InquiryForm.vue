@@ -73,6 +73,12 @@ import InputText from 'primevue/inputtext'
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
+// const emailOptions = {
+//   from: 'testsendemailelprom@gmail.com',
+//   to: 'golovinadic@gmail.com',
+//   subject: 'Test email',
+//   text: 'This is a test email sent from the browser',
+// }
 const option = ref(['person', 'firma'])
 const showError = ref(false)
 const name = ref()
@@ -104,8 +110,27 @@ function onSend() {
     square.value
   ) {
     //send logoc todo
-    onCancel()
+    // onCancel()
   }
+}
+// @ts-ignore
+function sendWithSMTPJS() {
+  //if use this method uncoment row in index.html
+  // @ts-ignore
+  Email.send({
+    Host: 'smtp.elasticemail.com',
+    Username: 'testsendemailelprom@gmail.com',
+    Password: 'D9C9739B73D36D0178CDE58425016B18DE62',
+    To: 'yuliia.ishchenko@ingeteam.com',
+    From: 'testsendemailelprom@gmail.com',
+    Subject: 'This is the subject',
+    Body: 'And this is the body',
+  })
+    .then((message: any) => {
+      console.log(message)
+      onCancel()
+    })
+    .catch((error: any) => console.error(error))
 }
 </script>
 
