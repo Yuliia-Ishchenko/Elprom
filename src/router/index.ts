@@ -10,7 +10,10 @@ import ElMechElprom from '@/view/Career/ElectromechanicElprom.vue'
 import Switchboard from '@/view/Products/Switchboard.vue'
 import Photovoltaic from '@/view/Products/Photovoltaic.vue'
 import ElectricalInstallation from '@/view/Products/ElectricalInstallation.vue'
+import Serviced from '@/view/Services.vue'
+import Switchboards from '@/view/Switchboards.vue'
 import { PageName } from '@/enums/PageName'
+import Services from '@/view/Services.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -67,6 +70,16 @@ const routes: Array<RouteRecordRaw> = [
     path: '/products/electricalInstallation',
     name: PageName.ElectricalInstallation,
     component: ElectricalInstallation,
+  },
+  {
+    path: '/services',
+    name: PageName.Services,
+    component: Services,
+  },
+  {
+    path: '/switchboard',
+    name: PageName.Switchboards,
+    component: Switchboards,
   },
 ]
 

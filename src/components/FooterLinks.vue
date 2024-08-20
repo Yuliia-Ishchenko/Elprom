@@ -6,7 +6,7 @@
           <h4>{{ t('menubar.products') }}</h4>
           <ul class="list-unstyled footer-list">
             <li class="footer-list-item">
-              <a @click="goToPage(PageName.Switchboard)">» {{ t('products.label.l1') }}</a>
+              <a @click="goToPage(PageName.Switchboards)">» {{ t('products.label.l1') }}</a>
             </li>
             <li class="footer-list-item">
               <a @click="goToPage(PageName.ElectricalInstallation)">» {{ t('products.label.l2') }}</a>
@@ -15,7 +15,7 @@
               <a @click="goToPage(PageName.Photovoltaic)">» {{ t('products.label.l3') }}</a>
             </li>
             <li class="footer-list-item">
-              <a @click="goToPageByName('#pr-l-4')">» {{ t('products.label.l4') }}</a>
+              <a @click="goToPage(PageName.Services)">» {{ t('products.label.l5') }}</a>
             </li>
           </ul>
         </div>
@@ -28,9 +28,9 @@
             <li class="footer-list-item">
               <a @click="goToPage(PageName.About)">» {{ t('menubar.about') }}</a>
             </li>
-            <li class="footer-list-item">
+            <!-- <li class="footer-list-item">
               <a @click="goToPage(PageName.Reference)">» {{ t('footerLinks.references') }}</a>
-            </li>
+            </li> -->
             <li class="footer-list-item">
               <a @click="goToPage(PageName.News)">» {{ t('footerLinks.news') }}</a>
             </li>
@@ -68,10 +68,6 @@ const { t } = useI18n()
 const router = useRouter()
 function goToPage(pageName: string) {
   router.push({ name: pageName })
-}
-function goToPageByName(aHash: string) {
-  // router.push('/products#pr-l-4')
-  router.push({ path: '/products', hash: aHash })
 }
 </script>
 

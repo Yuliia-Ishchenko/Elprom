@@ -25,7 +25,7 @@
       </div>
     </div>
     <div class="container services vp-1">
-      <div class="service-item" @click="goToPage(PageName.Switchboard)">
+      <div class="service-item" @click="goToPage(PageName.Switchboards)">
         <div class="serv-img">
           <img
             src="/src/assets/img/services/steel-passive.svg"
@@ -74,7 +74,7 @@
         </div>
         <div class="serv-name">{{ t('products.label.l3') }}</div>
       </div>
-      <div class="service-item" @click="goToPageByName('#pr-l-4')">
+      <div class="service-item" @click="goToPage(PageName.Services)">
         <div class="serv-img">
           <img
             src="/src/assets/img/services/other-passive.svg"
@@ -87,7 +87,7 @@
             class="tile-menu-active"
             style="margin-top: 20px; height: 65px" />
         </div>
-        <div class="serv-name">{{ t('products.label.l4') }}</div>
+        <div class="serv-name">{{ t('products.label.l5') }}</div>
       </div>
     </div>
     <div class="home-about bg-gray inner-padding">
@@ -109,11 +109,11 @@
         <div class="links-item-list">
           <div
             :class="`l-item ${selectedItem.id == 1 ? ' active' : ''}`"
-            @click="goToPage(PageName.Reference)"
+            @click="goToPage(PageName.News)"
             @mouseover="onChangedInfo(0)">
             <div class="l-item-img"><i class="pi pi-globe"></i></div>
             <div class="l-item-text">
-              <h3>{{ t('footerLinks.references') }}</h3>
+              <h3>{{ t('footerLinks.news') }}</h3>
               <p>{{ t('home.item1') }}</p>
             </div>
           </div>
@@ -127,16 +127,7 @@
               <p>{{ t('home.item2') }}</p>
             </div>
           </div>
-          <div
-            :class="`l-item ${selectedItem.id == 3 ? ' active' : ''}`"
-            @click="goToPage(PageName.About)"
-            @mouseover="onChangedInfo(2)">
-            <div class="l-item-img"><i class="pi pi-thumbs-up"></i></div>
-            <div class="l-item-text">
-              <h3>{{ t('home.text3') }}</h3>
-              <p>{{ t('home.item5') }}</p>
-            </div>
-          </div>
+
           <div
             :class="`l-item ${selectedItem.id == 4 ? ' active' : ''}`"
             @click="goToPage(PageName.Contact)"
@@ -231,9 +222,6 @@ function onChangedInfo(indexItem: number) {
 }
 function goToPage(namePage: string) {
   router.push({ name: namePage })
-}
-function goToPageByName(aHash: string) {
-  router.push({ path: '/products', hash: aHash })
 }
 </script>
 

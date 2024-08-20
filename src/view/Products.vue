@@ -5,7 +5,7 @@
     </div>
     <div class="product-block vp-1 line-btm">
       <div class="container">
-        <h2 @click="goToPage(PageName.Switchboard)">{{ t('products.label.l1') }}</h2>
+        <h2 @click="goToPage(PageName.Switchboards)">{{ t('products.label.l1') }}</h2>
         <p>{{ t('switchboard.text1') }}</p>
         <p>{{ t('switchboard.text2') }}</p>
         <p class="color-red">{{ t('switchboard.text3') }}</p>
@@ -46,7 +46,7 @@
     </div>
     <div class="product-block vp-1">
       <div class="container">
-        <h2>{{ t('products.label.l4') }}</h2>
+        <h2 @click="goToPage(PageName.Services)">{{ t('products.label.l5') }}</h2>
         <ul>
           <li>{{ t('productNext.text1') }}</li>
           <li>{{ t('productNext.text2') }}</li>

@@ -19,6 +19,7 @@ export const messages = {
         l2: 'Technological Electromontage',
         l3: 'Photovoltaics',
         l4: 'Our Other Activities',
+        l5: 'Services',
       },
     },
     about: {
@@ -152,6 +153,46 @@ export const messages = {
       text9: 'Dismantling work',
       text10: 'Site equipment and material handling',
     },
+    global_services: {
+      serv_title_1: 'Milling holes in sheet metal',
+      serv_title_2: 'Laser engraving',
+      serv_title_3: 'Thermal imaging measurement',
+      serv_title_4: 'Electrical inspection',
+      serv_text_1:
+        'Fabrication of 2,4 – 11 mm holes for fans, air conditioners, grommets and controls. Milling of circular holes of larger diameters, and cutting of metric threads in the range M3 – M10. Installation of cable ducts and DIN rails on mounting panels according to the installation plan.',
+      serv_text_2:
+        'We perform laser marking and engraving on glass, plexiglass, self-adhesive foil and double-layer plastic with a choice of background colour and font. The maximum size of the engraved area is 800 × 450 mm. Supported vector data formats are dwg, dxf and cdr.',
+      serv_text_3:
+        'Thermal imaging measurements with the Testo 880 expert thermal camera for complete analysis and documentation with real images of buildings, electrical systems and machines.',
+      serv_text_4:
+        'Preparation of a network analysis report including graphs of measured variables and possible recommendations for elimination of detected faults.',
+    },
+    global_sw: {
+      sw_title_1: 'Výkonové separované rozváděče',
+      sw_title_2: 'Výkonové neseparované rozváděče',
+      sw_title_3: 'Výsuvná i nevýsuvná MCC',
+      sw_title_4: 'Rozváděče pro stroje a technologie',
+      sw_text_1:
+        'Primární funkcí separovaných rozváděčů je chránit obsluhu před jakýmkoliv rizikem úrazu elektrickým proudem.',
+      sw_text_1_2: 'Pro výkonové separované rozváděče používáme jako standard systémy těchto výrobců:',
+      sw_text_1_2_list1: 'Siemens – systém SIVACON S8',
+      sw_text_1_2_list2: 'Logstrup – systém Omega',
+      sw_text_1_2_list3: 'Schneider – systém Prisma',
+
+      sw_text_2:
+        'Výkonové neseparované rozváděče lze použít v případech, kdy je kladen důraz na jednoduchost řešení a nízkou cenu realizace, při zachování nezbytné bezpečnosti osob i provozu.',
+      sw_text_2_2:
+        'Pro výkonové neseparované rozváděče používáme skříně a komponenty většiny renomovaných výrobců (Siemens, Rittal, Kromexim, ABB, Schneider Electric, EATON).',
+
+      sw_text_3:
+        'Motorová centra MCC slouží k jištění, ovládání a monitorování vývodů s motorovou zátěží a jsou podskupinou rozváděčů výkonových separovaných.',
+      sw_text_3_2: 'Pro výkonové separované rozváděče používáme jako standard systémy těchto výrobců:',
+      sw_text_3_2_list1: 'Siemens – systém SIVACON S8',
+      sw_text_3_2_list2: 'Logstrup – systém Omega',
+      sw_text_4: 'Rozváděče pro vysoce specializované průmyslové aplikace včetně automobilového průmyslu i energetiku.',
+      sw_text_4_2:
+        'Důraz je kladen na vysokou mechanickou pevnost, odolnost proti povětrnostním vlivům a vibracím, precizní provedení montáže i stoprocentní spolehlivost.',
+    },
   },
 
   cz: {
@@ -174,6 +215,7 @@ export const messages = {
         l2: 'Technologické elektromontáže',
         l3: 'Fotovoltaika',
         l4: 'Naše další činnosti',
+        l5: 'Služby',
       },
     },
     about: {
@@ -304,6 +346,46 @@ export const messages = {
       text8: 'Revize elektro',
       text9: 'Demontážní práce',
       text10: 'Zajištění vybavení staveniště a manipulace s materiálem',
+    },
+    global_services: {
+      serv_title_1: 'Frézování otvorů do plechu',
+      serv_title_2: 'Gravírování laserem',
+      serv_title_3: 'Termovizní měření',
+      serv_title_4: 'Revize elektro',
+      serv_text_1:
+        'Zhotovení otvorů 2,4 – 11 mm pro ventilátory, klimatizace, průchodky a ovládací prvky. Frézování kruhových otvorů větších průměrů, a řezání metrických závitů v rozsahu M3 – M10. Osazování montážních panelů kabelovými kanály a DIN lištami dle osazovacího plánu.',
+      serv_text_2:
+        'Provádíme popis laserem a gravírování do skla, plexiskla, samolepicí folie a dvouvrstvého plastu s možností výběru barvy podkladu a písma. Maximální velikost gravírované plochy je 800 x 450 mm. Podporované jsou křivkové formáty dwg, dxf a cdr.',
+      serv_text_3:
+        'Termovizní měření prostřednictvím znalecké termokamery pro kompletní analýzu a dokumentaci se skutečným obrazem budov, elektrických systémů a strojů Testo 880.',
+      serv_text_4:
+        'Vypracování protokolu analýzy sítě včetně grafů měřených veličin a případného doporučení na odstranění zjištěných závad.',
+    },
+    global_sw: {
+      sw_title_1: 'Výkonové separované rozváděče',
+      sw_title_2: 'Výkonové neseparované rozváděče',
+      sw_title_3: 'Výsuvná i nevýsuvná MCC',
+      sw_title_4: 'Rozváděče pro stroje a technologie',
+      sw_text_1:
+        'Primární funkcí separovaných rozváděčů je chránit obsluhu před jakýmkoliv rizikem úrazu elektrickým proudem.',
+      sw_text_1_2: 'Pro výkonové separované rozváděče používáme jako standard systémy těchto výrobců:',
+      sw_text_1_2_list1: 'Siemens – systém SIVACON S8',
+      sw_text_1_2_list2: 'Logstrup – systém Omega',
+      sw_text_1_2_list3: 'Schneider – systém Prisma',
+
+      sw_text_2:
+        'Výkonové neseparované rozváděče lze použít v případech, kdy je kladen důraz na jednoduchost řešení a nízkou cenu realizace, při zachování nezbytné bezpečnosti osob i provozu.',
+      sw_text_2_2:
+        'Pro výkonové neseparované rozváděče používáme skříně a komponenty většiny renomovaných výrobců (Siemens, Rittal, Kromexim, ABB, Schneider Electric, EATON).',
+
+      sw_text_3:
+        'Motorová centra MCC slouží k jištění, ovládání a monitorování vývodů s motorovou zátěží a jsou podskupinou rozváděčů výkonových separovaných.',
+      sw_text_3_2: 'Pro výkonové separované rozváděče používáme jako standard systémy těchto výrobců:',
+      sw_text_3_2_list1: 'Siemens – systém SIVACON S8',
+      sw_text_3_2_list2: 'Logstrup – systém Omega',
+      sw_text_4: 'Rozváděče pro vysoce specializované průmyslové aplikace včetně automobilového průmyslu i energetiku.',
+      sw_text_4_2:
+        'Důraz je kladen na vysokou mechanickou pevnost, odolnost proti povětrnostním vlivům a vibracím, precizní provedení montáže i stoprocentní spolehlivost.',
     },
     inquiryForm: 'Poptávkový formulář',
     inquiryFormIn: {

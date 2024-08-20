@@ -18,7 +18,7 @@ import BreadCrumb from '@/components/BreadCrumb.vue'
 import { useI18n } from 'vue-i18n'
 import { computed } from 'vue'
 const { t } = useI18n()
-const items = computed(() => [{ label: t('products.label.l1'), pageName: PageName.Switchboard }])
+const items = computed(() => [{ label: t('products.label.l1'), pageName: PageName.Switchboards }])
 const home = computed(() => {
   return { label: t('menubar.products'), pageName: PageName.Products }
 })
