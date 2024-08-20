@@ -7,7 +7,7 @@
         <a :href="`mailto:${email}`" class="email">{{ email }}</a>
       </span>
     </li>
-    <li>
+    <li v-if="phone">
       Tel:
       <span class="career-icons">
         <i class="pi pi-phone" />

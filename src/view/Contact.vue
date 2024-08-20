@@ -7,7 +7,7 @@
       </div>
       <div class="vp-1"></div>
     </div>
-    <div class="container line-btm" style="padding-bottom: 2rem">
+    <div class="container line-btm" style="margin-bottom: 1rem; padding-bottom: 1rem">
       <div class="bg-color-red department">
         <h3 class="text-white">{{ t('contact.department_1') }}</h3>
       </div>
@@ -20,18 +20,27 @@
           </div>
         </div>
       </div>
+
       <div class="bg-color-red department">
-        <h3 class="text-white">{{ t('contact.department_2') }}</h3>
+        <h3 class="text-white">{{ t('contact.department_4') }}</h3>
       </div>
       <div class="contact-person">
         <div class="">
-          <div class="cp-name">Pavel Piskala</div>
-          <div class="cp-position">{{ t('contact.position_1') }}</div>
+          <div class="cp-name">Ing. Miroslav Žáček</div>
+          <div class="cp-position">{{ t('contact.position_3') }}</div>
           <div class="cp-contact">
-            <PersonContact email="piskala.pavel@elpromservice.cz" phone="420 602 544 937"></PersonContact>
+            <PersonContact email="zacek@elpromservice.cz" phone="+ 420 739 552 899"></PersonContact>
+          </div>
+        </div>
+        <div class="">
+          <div class="cp-name">Marek Dudek</div>
+          <div class="cp-position">{{ t('contact.position_4') }}</div>
+          <div class="cp-contact">
+            <PersonContact email="dudek@elpromservice.cz" phone="+ 420 722 950 795"></PersonContact>
           </div>
         </div>
       </div>
+
       <div class="bg-color-red department">
         <h3 class="text-white">{{ t('contact.department_3') }}</h3>
       </div>
@@ -51,40 +60,23 @@
           </div>
         </div>
       </div>
+
       <div class="bg-color-red department">
-        <h3 class="text-white">{{ t('contact.department_4') }}</h3>
+        <h3 class="text-white">{{ t('contact.department_5') }}</h3>
       </div>
       <div class="contact-person">
-        <div class="cp-row">
-          <div class="line-btm" style="margin-bottom: 1rem; padding-bottom: 0.5rem">
-            <div class="cp-name">Ing. Miroslav Žáček</div>
-            <div class="cp-position">{{ t('contact.position_3') }}</div>
-            <div class="cp-contact">
-              <PersonContact email="zacek@elpromservice.cz" phone="+ 420 739 552 899"></PersonContact>
-            </div>
-          </div>
-          <div class="">
-            <div class="cp-name">Marek Dudek</div>
-            <div class="cp-position">{{ t('contact.position_4') }}</div>
-            <div class="cp-contact">
-              <PersonContact email="dudek@elpromservice.cz" phone="+ 420 722 950 795"></PersonContact>
-            </div>
+        <div class="">
+          <div class="cp-name">Šárka Piskalová</div>
+          <div class="cp-position">{{ t('contact.position_8') }}</div>
+          <div class="cp-contact">
+            <PersonContact email="piskalova@elpromservice.cz" phone="+420 723 490 301"></PersonContact>
           </div>
         </div>
-        <div class="cp-row">
-          <div class="line-btm" style="margin-bottom: 1rem; padding-bottom: 0.5rem">
-            <div class="cp-name">Vilém Kufka</div>
-            <div class="cp-position">{{ t('contact.position_7') }}</div>
-            <div class="cp-contact">
-              <PersonContact email="kufka@elpromservice.cz" phone="+ 420 777 620 695"></PersonContact>
-            </div>
-          </div>
-          <div class="">
-            <div class="cp-name">Dalibor Krupa</div>
-            <div class="cp-position">{{ t('contact.position_5') }}</div>
-            <div class="cp-contact">
-              <PersonContact email="krupa@elpromservice.cz" phone="+ 420 777 464 739"></PersonContact>
-            </div>
+        <div class="">
+          <div class="cp-name">Dalibor Krupa</div>
+          <div class="cp-position">{{ t('contact.position_5') }}</div>
+          <div class="cp-contact">
+            <PersonContact email="krupa@elpromservice.cz" phone="+ 420 777 464 739"></PersonContact>
           </div>
         </div>
       </div>
@@ -100,6 +92,7 @@
           IČ: 28640098<br />
           DIČ: CZ28640098
         </p>
+        <PersonContact email="elpromservice@elpromservice.cz"></PersonContact>
         <PersonContact email="info@elpromservice.cz" phone="+420 602 200 225"></PersonContact>
         <PersonContact phone="+420 722 950 795"></PersonContact>
       </div>

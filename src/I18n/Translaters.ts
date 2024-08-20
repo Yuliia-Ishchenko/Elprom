@@ -38,8 +38,9 @@ export const messages = {
     contact: {
       department_1: 'Company management',
       department_2: 'Photovoltaics',
-      department_3: 'Technological electromontage',
+      department_3: 'Technological electromontage and photovoltaics',
       department_4: 'Panel boards manufacturing',
+      department_5: 'Administration',
       position_1: 'Head of sales department',
       position_2: 'Sales department',
       position_3: 'Technical sales manager',
@@ -47,6 +48,7 @@ export const messages = {
       position_5: 'Head of purchasing',
       position_6: 'Managing director',
       position_7: 'Quality management',
+      position_8: `Director's Assistant`,
     },
     baner: {
       row1: 'Professional',
@@ -191,8 +193,9 @@ export const messages = {
     contact: {
       department_1: 'Vedení společnosti',
       department_2: 'Fotovoltaika',
-      department_3: 'Technologické elektromontáže',
+      department_3: 'Technologické elektromontáže a fotovoltaika',
       department_4: 'Výroba rozvaděčů',
+      department_5: 'Administrativa',
       position_1: 'Vedoucí obchodního oddělení',
       position_2: 'Obchodní oddělení',
       position_3: 'Technicko-obchodní manažer',
@@ -200,6 +203,7 @@ export const messages = {
       position_5: 'Vedoucí nákupu',
       position_6: 'Jednatel',
       position_7: 'Řízení jakosti',
+      position_8: 'Asistentka ředitele',
     },
     baner: {
       row1: 'Profesionální',
