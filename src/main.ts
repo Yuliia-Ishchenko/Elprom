@@ -23,3 +23,27 @@ const i18n = createI18n({
 })
 
 createApp(App).use(router).use(PrimeVue).use(i18n).provide('i18n', i18n).mount('#app')
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    // Регистрация Service Worker
+    navigator.serviceWorker
+      .register('/sw.js')
+      .then((registration) => {
+        // Проверка наличия обновлений
+        registration.onupdatefound = () => {
+          const installingWorker = registration.installing
+          if (installingWorker) {
+            installingWorker.onstatechange = () => {
+              if (installingWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                // Перезагрузка страницы, если новый Service Worker установлен
+                window.location.reload()
+              }
+            }
+          }
+        }
+      })
+      .catch((error) => {
+        console.error('Ошибка регистрации Service Worker:', error)
+      })
+  })
+}
