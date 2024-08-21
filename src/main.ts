@@ -15,17 +15,10 @@ import '@/assets/css/variables.scss'
 import { createI18n } from 'vue-i18n'
 import { messages } from './I18n/Translaters'
 
-const i18n = createI18n({
-  legacy: false,
-  locale: 'cz',
-  fallbackLocale: 'en',
-  messages,
-})
-
-createApp(App).use(router).use(PrimeVue).use(i18n).provide('i18n', i18n).mount('#app')
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     // Регистрация Service Worker
+    console.log('UUUUUUUUUUUUUUUUUUUUUUUU')
     navigator.serviceWorker
       .register('/sw.js')
       .then((registration) => {
@@ -47,3 +40,12 @@ if ('serviceWorker' in navigator) {
       })
   })
 }
+
+const i18n = createI18n({
+  legacy: false,
+  locale: 'cz',
+  fallbackLocale: 'en',
+  messages,
+})
+
+createApp(App).use(router).use(PrimeVue).use(i18n).provide('i18n', i18n).mount('#app')
