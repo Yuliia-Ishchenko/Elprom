@@ -63,13 +63,13 @@ const items = computed(() => [
       router.push({ name: PageName.Career })
     },
   },
-  {
-    id: 4,
-    label: 'Ingeteam a. s.',
-    class: 'bg-hove-none menu-item-link text-slide',
-    url: 'https://www.ingeteam.cz/',
-    target: '_blank',
-  },
+  // {
+  //   id: 4,
+  //   label: 'Ingeteam a. s.',
+  //   class: 'bg-hove-none menu-item-link text-slide',
+  //   url: 'https://www.ingeteam.cz/',
+  //   target: '_blank',
+  // },
   {
     id: 5,
     label: t('menubar.contact'),
@@ -109,65 +109,4 @@ function styleItem() {
 }
 </script>
 
-<style lang="scss">
-// .elprm-menu {
-//   position: fixed;
-//   top: 0;
-//   width: 100%;
-//   z-index: 1;
-// }
-// .bg-hove-none {
-//   .p-menuitem-content:hover {
-//     background: none;
-//   }
-// }
-// .borderbott-hover {
-//   .p-menuitem-content:hover {
-//     border-bottom: 2px solid var(--menu-bg-color);
-//     border-radius: 0;
-//   }
-// }
-// .borderbottred {
-//   .p-menuitem-content {
-//     border-bottom: 2px solid var(--menu-bg-color);
-//     border-radius: 0;
-//   }
-// }
-// .menu-item-link {
-//   background: var(--menu-bg-color);
-//   .p-menuitem-content .p-menuitem-link {
-//     color: white;
-//   }
-// }
-// .text-slide {
-//   .p-menuitem-content:hover a {
-//     transform: translate(0, 10px);
-//     transition-duration: 300ms;
-//     transition-property: all;
-//     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-//   }
-//   .p-menuitem-content a {
-//     transform: translate(0, 0);
-//     transition-duration: 300ms;
-//     transition-property: all;
-//     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-//   }
-// }
-// .bg-white {
-//   background: white;
-// }
-// .topMenu-lang {
-//   li {
-//     margin: 0;
-//     margin-left: 20px;
-//   }
-//   .dropdown-menu {
-//     display: block;
-//     width: auto;
-
-//     li {
-//       margin: 0;
-//     }
-//   }
-// }
-</style>
+<style lang="scss"></style>
