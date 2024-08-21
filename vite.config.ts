@@ -14,6 +14,19 @@ export default defineConfig({
         cleanupOutdatedCaches: true,
         cacheId: '4',
         skipWaiting: true,
+        clientsClaim: true,
+        runtimeCaching: [
+          {
+            urlPattern: ({ request }) => request.mode === 'navigate',
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'pages',
+              expiration: {
+                maxEntries: 5,
+              },
+            },
+          },
+        ],
       },
     }),
   ],
