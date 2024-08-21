@@ -1,9 +1,9 @@
 <template>
   <div class="online">
     <Menu />
-    <!-- <IngeteamLink /> -->
+    <IngeteamLink />
     <main>
-      <!-- <router-view /> -->
+      <router-view />
       <ScrollTop />
     </main>
     <FooterLinks />
@@ -16,7 +16,7 @@ import ScrollTop from 'primevue/scrolltop'
 import Menu from '@/components/Menu.vue'
 import FooterCopyright from '@/components/FooterCopyright.vue'
 import FooterLinks from '@/components/FooterLinks.vue'
-// import IngeteamLink from '@/components/IngeteamLink.vue'
+import IngeteamLink from '@/components/IngeteamLink.vue'
 </script>
 
 <style scoped>
