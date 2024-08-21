@@ -1,30 +1,22 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '@/view/Home.vue'
-import Products from '@/view/Products.vue'
 import Career from '@/view/Career.vue'
 import Contact from '@/view/Contact.vue'
 import About from '@/view/About.vue'
 import News from '@/view/News.vue'
 import Reference from '@/view/References.vue'
 import ElMechElprom from '@/view/Career/ElectromechanicElprom.vue'
-import Switchboard from '@/view/Products/Switchboard.vue'
-import Photovoltaic from '@/view/Products/Photovoltaic.vue'
-import ElectricalInstallation from '@/view/Products/ElectricalInstallation.vue'
-import Serviced from '@/view/Services.vue'
-import Switchboards from '@/view/Switchboards.vue'
 import { PageName } from '@/enums/PageName'
-import Services from '@/view/Services.vue'
+import Prod_Services from '@/view/Prod_Services.vue'
+import Prod_Switchboards from '@/view/Prod_Switchboards.vue'
+import Prod_ElectricalInstallation from '@/view/Prod_ElectricalInstalation.vue'
+import Prod_Photovoltaic from '@/view/Prod_Photovoltaic.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: PageName.Home,
     component: Home,
-  },
-  {
-    path: '/products',
-    name: PageName.Products,
-    component: Products,
   },
   {
     path: '/career',
@@ -57,29 +49,24 @@ const routes: Array<RouteRecordRaw> = [
     component: ElMechElprom,
   },
   {
-    path: '/products/switchboard',
-    name: PageName.Switchboard,
-    component: Switchboard,
-  },
-  {
-    path: '/products/photovoltaic',
+    path: '/photovoltaic',
     name: PageName.Photovoltaic,
-    component: Photovoltaic,
+    component: Prod_Photovoltaic,
   },
   {
-    path: '/products/electricalInstallation',
+    path: '/electricalInstallation',
     name: PageName.ElectricalInstallation,
-    component: ElectricalInstallation,
+    component: Prod_ElectricalInstallation,
   },
   {
     path: '/services',
     name: PageName.Services,
-    component: Services,
+    component: Prod_Services,
   },
   {
-    path: '/switchboard',
+    path: '/switchboards',
     name: PageName.Switchboards,
-    component: Switchboards,
+    component: Prod_Switchboards,
   },
 ]
 

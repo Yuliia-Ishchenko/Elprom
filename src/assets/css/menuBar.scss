@@ -71,19 +71,37 @@
   }
 }
 .text-slide {
-  .p-menuitem-content:hover a {
+  /* Apply styles only to .p-menuitem-content a elements that do not have a parent .sub-item-prod */
+  .p-menuitem-content:not(.sub-item-prod .p-menuitem-content) a:hover {
     transform: translate(0, 10px);
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
   }
-  .p-menuitem-content a {
+
+  .p-menuitem-content:not(.sub-item-prod .p-menuitem-content) a {
     transform: translate(0, 0);
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
   }
 }
+.sub-item-prod {
+  .p-menuitem-content {
+    border-bottom: 1px solid #dadada;
+    border-radius: 0;
+    transition: border-bottom-color 200ms ease;
+  }
+
+  .p-menuitem-content:hover {
+    border-bottom: 1px solid var(--menu-bg-color);
+    border-radius: 0;
+    .pi {
+      color: var(--menu-bg-color);
+    }
+  }
+}
+
 .bg-white {
   background: white;
 }

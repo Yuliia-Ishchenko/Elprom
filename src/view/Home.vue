@@ -109,14 +109,15 @@
         <div class="links-item-list">
           <div
             :class="`l-item ${selectedItem.id == 1 ? ' active' : ''}`"
-            @click="goToPage(PageName.News)"
+            @click="goToPage(PageName.Reference)"
             @mouseover="onChangedInfo(0)">
             <div class="l-item-img"><i class="pi pi-globe"></i></div>
             <div class="l-item-text">
-              <h3>{{ t('footerLinks.news') }}</h3>
+              <h3>{{ t('footerLinks.references') }}</h3>
               <p>{{ t('home.item1') }}</p>
             </div>
           </div>
+
           <div
             :class="`l-item ${selectedItem.id == 2 ? ' active' : ''}`"
             @click="goToPage(PageName.Career)"
@@ -125,6 +126,17 @@
             <div class="l-item-text">
               <h3>{{ t('menubar.career') }}</h3>
               <p>{{ t('home.item2') }}</p>
+            </div>
+          </div>
+
+          <div
+            :class="`l-item ${selectedItem.id == 3 ? ' active' : ''}`"
+            @click="goToPage(PageName.About)"
+            @mouseover="onChangedInfo(2)">
+            <div class="l-item-img"><i class="pi pi-thumbs-up"></i></div>
+            <div class="l-item-text">
+              <h3>{{ t('home.text3') }}</h3>
+              <p>{{ t('home.item5') }}</p>
             </div>
           </div>
 

@@ -50,9 +50,41 @@ const items = computed(() => [
     label: t('menubar.products'),
     name: PageName.Products,
     class: 'bg-hove-none borderbott-hover text-slide',
-    command: () => {
-      router.push({ name: PageName.Products })
-    },
+    // isOverlayPanel: true,
+    items: [
+      {
+        label: t('products.label.l1'),
+        class: 'sub-item-prod',
+        icon: 'pi pi-bolt',
+        command: () => {
+          router.push({ name: PageName.Switchboards })
+        },
+      },
+      {
+        label: t('products.label.l2'),
+        class: 'sub-item-prod',
+        icon: 'pi pi-wrench',
+        command: () => {
+          router.push({ name: PageName.ElectricalInstallation })
+        },
+      },
+      {
+        label: t('products.label.l3'),
+        class: 'sub-item-prod',
+        icon: 'pi pi-microsoft',
+        command: () => {
+          router.push({ name: PageName.Photovoltaic })
+        },
+      },
+      {
+        label: t('products.label.l5'),
+        class: 'sub-item-prod',
+        icon: 'pi pi-cog',
+        command: () => {
+          router.push({ name: PageName.Services })
+        },
+      },
+    ],
   },
   {
     id: 3,
@@ -63,13 +95,6 @@ const items = computed(() => [
       router.push({ name: PageName.Career })
     },
   },
-  // {
-  //   id: 4,
-  //   label: 'Ingeteam a. s.',
-  //   class: 'bg-hove-none menu-item-link text-slide',
-  //   url: 'https://www.ingeteam.cz/',
-  //   target: '_blank',
-  // },
   {
     id: 5,
     label: t('menubar.contact'),

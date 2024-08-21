@@ -8,6 +8,7 @@ const props = defineProps<{
   item?: any
   itemProps?: any
 }>()
+
 function redirect() {
   if (props.item.url) window.open(props.item.url, '_blank')
 }
