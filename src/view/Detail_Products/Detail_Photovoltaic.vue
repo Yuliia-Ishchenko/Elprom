@@ -1,6 +1,5 @@
 <template>
   <div class="container line-btm vp-1">
-    <BreadCrumb :items="items" :home="home" />
     <div class="line-btm">
       <h1>{{ t('products.label.l3') }}</h1>
     </div>
@@ -47,19 +46,14 @@
   </Dialog>
 </template>
 
+
 <script lang="ts" setup>
 import InquiryForm from '@/components/InquiryForm.vue'
 import Button from 'primevue/button'
 import Dialog from 'primevue/dialog'
-import { PageName } from '@/enums/PageName'
-import BreadCrumb from '@/components/BreadCrumb.vue'
 import { useI18n } from 'vue-i18n'
-import { computed, ref } from 'vue'
+import { ref } from 'vue'
 const { t } = useI18n()
-const items = computed(() => [{ label: t('products.label.l3'), pageName: PageName.Photovoltaic }])
-const home = computed(() => {
-  return { label: t('menubar.products'), pageName: PageName.Products }
-})
 const dialogVisible = ref(false)
 </script>
 
