@@ -90,12 +90,13 @@
   .p-menuitem-content {
     border-bottom: 1px solid #dadada;
     border-radius: 0;
-    transition: border-bottom-color 200ms ease;
+    transition: border-bottom-color 200ms ease, transform 0.1s ease;
   }
 
   .p-menuitem-content:hover {
     border-bottom: 1px solid var(--menu-bg-color);
     border-radius: 0;
+    transform: scale(1.03);
     .pi {
       color: var(--menu-bg-color);
     }

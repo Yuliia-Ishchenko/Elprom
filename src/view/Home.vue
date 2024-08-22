@@ -107,10 +107,7 @@
           </div>
         </div>
         <div class="links-item-list">
-          <div
-            :class="`l-item ${selectedItem.id == 1 ? ' active' : ''}`"
-            @click="goToPage(PageName.Reference)"
-            @mouseover="onChangedInfo(0)">
+          <div :class="`l-item ${selectedItem.id == 1 ? ' active' : ''}`" @click="toggle" @mouseover="onChangedInfo(0)">
             <div class="l-item-img"><i class="pi pi-globe"></i></div>
             <div class="l-item-text">
               <h3>{{ t('footerLinks.references') }}</h3>
@@ -130,17 +127,6 @@
           </div>
 
           <div
-            :class="`l-item ${selectedItem.id == 3 ? ' active' : ''}`"
-            @click="goToPage(PageName.About)"
-            @mouseover="onChangedInfo(2)">
-            <div class="l-item-img"><i class="pi pi-thumbs-up"></i></div>
-            <div class="l-item-text">
-              <h3>{{ t('home.text3') }}</h3>
-              <p>{{ t('home.item5') }}</p>
-            </div>
-          </div>
-
-          <div
             :class="`l-item ${selectedItem.id == 4 ? ' active' : ''}`"
             @click="goToPage(PageName.Contact)"
             @mouseover="onChangedInfo(3)">
@@ -154,6 +140,9 @@
       </div>
     </div>
   </div>
+  <OverlayPanel ref="op">
+    <ReferencesHoverOverlay />
+  </OverlayPanel>
 </template>
 
 <script lang="ts" setup>
@@ -162,6 +151,7 @@ import Galleria from 'primevue/galleria'
 import { useI18n } from 'vue-i18n'
 import { PageName } from '@/enums/PageName'
 import { useRouter } from 'vue-router'
+import OverlayPanel from 'primevue/overlaypanel'
 import img1 from '/src/assets/img/Aktuality-obrazek.jpg'
 import img2 from '/src/assets/img/elprom_o_nas_background.jpg'
 import img3 from '/src/assets/img/Kariera-obrazek.png'
@@ -170,8 +160,17 @@ import img1_2 from '/src/assets/img/skrine.jpg'
 import img2_2 from '/src/assets/img/Kariera-obrazek2.png'
 import img3_2 from '/src/assets/img/elprom_o_nas_background2.jpg'
 import img4_2 from '/src/assets/img/contact-us.png'
+import ReferencesHoverOverlay from '@/components/ReferencesHoverOverlay.vue'
 const { t } = useI18n()
 const router = useRouter()
+
+const op = ref()
+const toggle = (event: any) => {
+  op.value.toggle(event)
+}
+const closeOverPanel = () => {
+  op.value.hide()
+}
 const images = ref([
   {
     itemImageSrc: img1,
@@ -231,6 +230,9 @@ watch(
 )
 function onChangedInfo(indexItem: number) {
   selectedItem.value = itemList.value[indexItem]
+  if (indexItem > 0) {
+    closeOverPanel()
+  }
 }
 function goToPage(namePage: string) {
   router.push({ name: namePage })

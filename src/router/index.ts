@@ -4,7 +4,6 @@ import Career from '@/view/Career.vue'
 import Contact from '@/view/Contact.vue'
 import About from '@/view/About.vue'
 import News from '@/view/News.vue'
-import Reference from '@/view/References.vue'
 import ElMechElprom from '@/view/Career/ElectromechanicElprom.vue'
 import { PageName } from '@/enums/PageName'
 import Prod_Services from '@/view/Prod_Services.vue'
@@ -37,11 +36,6 @@ const routes: Array<RouteRecordRaw> = [
     path: '/news',
     name: PageName.News,
     component: News,
-  },
-  {
-    path: '/reference',
-    name: PageName.Reference,
-    component: Reference,
   },
   {
     path: '/career/electromechanicElprom',
