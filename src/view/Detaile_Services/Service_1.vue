@@ -9,11 +9,12 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { PageName } from '@/enums/PageName'
 import DetailPageLayout from '@/components/DetailPageLayout.vue'
+import IMG_1015 from '/src/assets/img/global_services/IMG_1015@2x.jpg'
 const { t } = useI18n()
 const title = computed(() => t('global_services.serv_title_1'))
 const imgUrlList = [
   {
-    itemImageSrc: '/src/assets/img/global_services/IMG_1015@2x.jpg',
+    itemImageSrc: IMG_1015,
     thumbnailImageSrc: '/src/assets/img/global_services/IMG_1015@small.jpg',
     alt: 'Description for Image 1',
     title: 'Title 1',
