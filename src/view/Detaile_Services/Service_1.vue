@@ -10,30 +10,37 @@ import { useI18n } from 'vue-i18n'
 import { PageName } from '@/enums/PageName'
 import DetailPageLayout from '@/components/DetailPageLayout.vue'
 import IMG_1015 from '/src/assets/img/global_services/IMG_1015@2x.jpg'
+import IMG_1015small from '/src/assets/img/global_services/IMG_1015small.jpg'
+import IMG_1031 from '/src/assets/img/global_services/IMG_1031@2x.jpg'
+import IMG_1031small from '/src/assets/img/global_services/IMG_1031small.jpg'
+import IMG_1006 from '/src/assets/img/global_services/IMG_1006@2x.jpg'
+import IMG_1006small from '/src/assets/img/global_services/IMG_1006small.jpg'
+import IMG_0969 from '/src/assets/img/global_services/IMG_0969@2x.jpg'
+import IMG_0969small from '/src/assets/img/global_services/IMG_0969small.jpg'
 const { t } = useI18n()
 const title = computed(() => t('global_services.serv_title_1'))
 const imgUrlList = [
   {
     itemImageSrc: IMG_1015,
-    thumbnailImageSrc: '/src/assets/img/global_services/IMG_1015@small.jpg',
+    thumbnailImageSrc: IMG_1015small,
     alt: 'Description for Image 1',
     title: 'Title 1',
   },
   {
-    itemImageSrc: '/src/assets/img/global_services/IMG_1031@2x.jpg',
-    thumbnailImageSrc: '/src/assets/img/global_services/IMG_1031@small.jpg',
+    itemImageSrc: IMG_1031,
+    thumbnailImageSrc: IMG_1031small,
     alt: 'Description for Image 1',
     title: 'Title 1',
   },
   {
-    itemImageSrc: '/src/assets/img/global_services/IMG_1006@2x.jpg',
-    thumbnailImageSrc: '/src/assets/img/global_services/IMG_1006@small.jpg',
+    itemImageSrc: IMG_1006,
+    thumbnailImageSrc: IMG_1006small,
     alt: 'Description for Image 1',
     title: 'Title 1',
   },
   {
-    itemImageSrc: '/src/assets/img/global_services/IMG_0969@2x.jpg',
-    thumbnailImageSrc: '/src/assets/img/global_services/IMG_0969@small.jpg',
+    itemImageSrc: IMG_0969,
+    thumbnailImageSrc: IMG_0969small,
     alt: 'Description for Image 1',
     title: 'Title 1',
   },
