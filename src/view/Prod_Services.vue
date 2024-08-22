@@ -9,8 +9,11 @@
         <div class="container gs-absolute">
           <div class="gs-r-col"></div>
           <div class="gs-r-col gs-r-text">
-            <h2>{{ t('global_services.serv_title_1') }}</h2>
+            <h2 @click="goToPage(PageName.Service_1)">{{ t('global_services.serv_title_1') }}</h2>
             <p>{{ t('global_services.serv_text_1') }}</p>
+            <div class="find-out-more" @click="goToPage(PageName.Service_1)">
+              <Button :label="`${t('More')}>>`" plain text />
+            </div>
           </div>
         </div>
       </div>
@@ -60,8 +63,15 @@
 </template>
 
 <script lang="ts" setup>
+import Button from 'primevue/button'
+import { PageName } from '@/enums/PageName'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
 const { t } = useI18n()
+const router = useRouter()
+function goToPage(namePage: string) {
+  router.push({ name: namePage })
+}
 </script>
 
 <style lang="scss" scoped>
@@ -96,6 +106,15 @@ const { t } = useI18n()
       display: flex;
       flex-direction: column;
       justify-content: center;
+      h2:hover,
+      .find-out-more:hover {
+        cursor: pointer;
+      }
+      .find-out-more {
+        .p-button {
+          padding: 0.2rem 0.5rem;
+        }
+      }
     }
     .gs-bg {
       background: var(--gray-bg-color);

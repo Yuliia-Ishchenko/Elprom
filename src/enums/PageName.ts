@@ -10,6 +10,7 @@ export enum PageName {
   Switchboard = 'Switchboard',
   Photovoltaic = 'Photovoltaic',
   ElectricalInstallation = 'ElectricalInstallation',
-  Services = 'Servuces',
+  Services = 'Services',
   Switchboards = 'Switchboards',
+  Service_1 = 'Service_1',
 }

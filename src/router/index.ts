@@ -10,6 +10,7 @@ import Prod_Services from '@/view/Prod_Services.vue'
 import Prod_Switchboards from '@/view/Prod_Switchboards.vue'
 import Prod_ElectricalInstallation from '@/view/Prod_ElectricalInstalation.vue'
 import Prod_Photovoltaic from '@/view/Prod_Photovoltaic.vue'
+import Service_1 from '@/view/Detaile_Services/Service_1.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -61,6 +62,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/switchboards',
     name: PageName.Switchboards,
     component: Prod_Switchboards,
+  },
+  {
+    path: '/services/detail_1',
+    name: PageName.Service_1,
+    component: Service_1,
   },
 ]
 

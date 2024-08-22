@@ -196,6 +196,11 @@ export const messages = {
   },
 
   cz: {
+    'About the product': 'O produktu',
+    'About the service': 'O službě',
+    More: 'Vice',
+    'All services': 'Všechny služby',
+    'All products': 'Všechny produkty',
     menubar: {
       products: 'Produkty a služby',
       career: 'Kariéra',
