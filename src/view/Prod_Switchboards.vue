@@ -3,7 +3,7 @@
     <div class="bg-gray">
       <div class="container gl-swb-row">
         <div class="gl-swb-col gs-r-text">
-          <h2>{{ t('global_sw.sw_title_1') }}</h2>
+          <h2 @click="goToPage(PageName.Switchboard_1)">{{ t('global_sw.sw_title_1') }}</h2>
           <p>{{ t('global_sw.sw_text_1') }}</p>
           <p>{{ t('global_sw.sw_text_1_2') }}</p>
           <p>
@@ -11,6 +11,9 @@
             <span> – {{ t('global_sw.sw_text_1_2_list2') }}</span> <br />
             <span> – {{ t('global_sw.sw_text_1_2_list3') }}</span> <br />
           </p>
+          <div class="find-out-more" @click="goToPage(PageName.Switchboard_1)">
+            <Button :label="`${t('More')} >>`" plain text />
+          </div>
         </div>
         <div class="gl-swb-col gs-r-img">
           <img src="/src/assets/img/global_switchboard/1sohab4j.png" alt="" />
@@ -64,7 +67,14 @@
 </template>
 
 <script lang="ts" setup>
+import Button from 'primevue/button'
+import { PageName } from '@/enums/PageName'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
+const router = useRouter()
+function goToPage(namePage: string) {
+  router.push({ name: namePage })
+}
 const { t } = useI18n()
 </script>
 
@@ -72,6 +82,9 @@ const { t } = useI18n()
 .global-switchboard {
   h2 {
     font-size: 36px;
+  }
+  h2:hover {
+    cursor: pointer;
   }
   .gl-swb-row {
     display: flex;

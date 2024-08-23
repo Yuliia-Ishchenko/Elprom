@@ -12,7 +12,7 @@
             <h2 @click="goToPage(PageName.Service_1)">{{ t('global_services.serv_title_1') }}</h2>
             <p>{{ t('global_services.serv_text_1') }}</p>
             <div class="find-out-more" @click="goToPage(PageName.Service_1)">
-              <Button :label="`${t('More')}>>`" plain text />
+              <Button :label="`${t('More')} >>`" plain text />
             </div>
           </div>
         </div>

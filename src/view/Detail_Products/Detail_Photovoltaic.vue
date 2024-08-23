@@ -1,35 +1,38 @@
 <template>
+  <DetailPageLayout :main-title="title" :img-arr="imgUrlList" :is-products="true">
+    <template v-slot:main-contant>
+      <p class="text-bold color-red">{{ t('photovoltaic.text2') }}</p>
+      <p>
+        <span> – {{ t('photovoltaic.text9') }}</span> <br />
+        <span> – {{ t('photovoltaic.text3') }}</span> <br />
+        <span> – {{ t('photovoltaic.text4') }}</span> <br />
+        <span> – {{ t('photovoltaic.text5') }}</span> <br />
+        <span> – {{ t('photovoltaic.text6') }}</span> <br />
+        <span> – {{ t('photovoltaic.text7') }}</span> <br />
+        <span> – {{ t('photovoltaic.text8') }}</span> <br />
+      </p>
+      <br />
+      <p class="text-bold color-red" style="margin-bottom: 0">{{ t('photovoltaic.text10') }}</p>
+      <div class="" style="display: flex; justify-content: space-between">
+        <div class="">
+          <p class="text-bold">{{ t('photovoltaic.text11') }}</p>
+          <p>
+            <span> – {{ t('photovoltaic.text12') }}</span> <br />
+            <span> – {{ t('photovoltaic.text13') }}</span> <br />
+            <span> – {{ t('photovoltaic.text14') }}</span> <br />
+          </p>
+        </div>
+        <div class="">
+          <p class="text-bold">{{ t('photovoltaic.text15') }}</p>
+          <p>
+            <span> – {{ t('photovoltaic.text16') }}</span> <br />
+            <span> – {{ t('photovoltaic.text17') }}</span> <br />
+          </p>
+        </div>
+      </div>
+    </template>
+  </DetailPageLayout>
   <div class="container line-btm vp-1">
-    <div class="line-btm">
-      <h1>{{ t('products.label.l3') }}</h1>
-    </div>
-    <div class="line-btm vp-1">
-      <p>{{ t('photovoltaic.text1') }}</p>
-      <h3>{{ t('photovoltaic.text2') }}</h3>
-      <ul>
-        <li>{{ t('photovoltaic.text9') }}</li>
-        <li>{{ t('photovoltaic.text3') }}</li>
-        <li>{{ t('photovoltaic.text4') }}</li>
-        <li>{{ t('photovoltaic.text5') }}</li>
-        <li>{{ t('photovoltaic.text6') }}</li>
-        <li>{{ t('photovoltaic.text7') }}</li>
-        <li>{{ t('photovoltaic.text8') }}</li>
-      </ul>
-    </div>
-    <div class="vp-1 line-btm">
-      <h3>{{ t('photovoltaic.text10') }}</h3>
-      <h3>{{ t('photovoltaic.text11') }}</h3>
-      <ul>
-        <li>{{ t('photovoltaic.text12') }}</li>
-        <li>{{ t('photovoltaic.text13') }}</li>
-        <li>{{ t('photovoltaic.text14') }}</li>
-      </ul>
-      <h3>{{ t('photovoltaic.text15') }}</h3>
-      <ul>
-        <li>{{ t('photovoltaic.text16') }}</li>
-        <li>{{ t('photovoltaic.text17') }}</li>
-      </ul>
-    </div>
     <div class="vp-1" style="text-align: center">
       <p class="color-red">
         {{ t('photovoltaic.text18') }}
@@ -46,18 +49,57 @@
   </Dialog>
 </template>
 
-
 <script lang="ts" setup>
+import DetailPageLayout from '@/components/DetailPageLayout.vue'
 import InquiryForm from '@/components/InquiryForm.vue'
 import Button from 'primevue/button'
 import Dialog from 'primevue/dialog'
 import { useI18n } from 'vue-i18n'
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+
+import IMG_1015 from '/src/assets/img/global_photovl/Photov_1.jpg'
+import IMG_1015small from '/src/assets/img/global_photovl/Photov_1@small.jpg'
+import IMG_1031 from '/src/assets/img/global_photovl/Photov_2.jpg'
+import IMG_1031small from '/src/assets/img/global_photovl/Photov_2@small.jpg'
+import IMG_1006 from '/src/assets/img/global_photovl/Photov_3.jpg'
+import IMG_1006small from '/src/assets/img/global_photovl/Photov_3@small.jpg'
+import IMG_0969 from '/src/assets/img/global_photovl/Photov_4.jpg'
+import IMG_0969small from '/src/assets/img/global_photovl/Photov_4@small.jpg'
 const { t } = useI18n()
 const dialogVisible = ref(false)
+const title = computed(() => t('products.label.l3'))
+const imgUrlList = [
+  {
+    itemImageSrc: IMG_1015,
+    thumbnailImageSrc: IMG_1015small,
+    alt: 'Description for Image 1',
+    title: 'Title 1',
+  },
+  {
+    itemImageSrc: IMG_1031,
+    thumbnailImageSrc: IMG_1031small,
+    alt: 'Description for Image 1',
+    title: 'Title 1',
+  },
+  {
+    itemImageSrc: IMG_1006,
+    thumbnailImageSrc: IMG_1006small,
+    alt: 'Description for Image 1',
+    title: 'Title 1',
+  },
+  {
+    itemImageSrc: IMG_0969,
+    thumbnailImageSrc: IMG_0969small,
+    alt: 'Description for Image 1',
+    title: 'Title 1',
+  },
+]
 </script>
 
 <style lang="scss" scoped>
+.text-bold {
+  font-weight: 700;
+}
 li {
   line-height: 1.42857143;
 }
